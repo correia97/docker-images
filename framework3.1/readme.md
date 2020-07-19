@@ -55,3 +55,7 @@ Execute o build com o comando
 ```bash
 docker build --build-arg sonarLogin=__SonarToken____  .
 ```
+
+
+## Docker Hub
+[.Net  core  sdk  sonar](https://hub.docker.com/r/correia97/netcoresdksonar)

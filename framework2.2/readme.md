@@ -5,7 +5,7 @@
 
 ```bash
 # Imagem com SDK para fazer o build da aplicação
-FROM correia97/netcoresdksonar:2.2 as build
+FROM correia97/netcoresdksonar:3.1-alpine3.11 as build
 
 # Diretório onde os arquivos serão copiados e onde os comandos serão executados
 WORKDIR /app
@@ -55,3 +55,7 @@ Execute o build com o comando
 ```bash
 docker build --build-arg sonarLogin=__SonarToken____  .
 ```
+
+
+## Docker Hub
+[.Net  core  sdk  sonar](https://hub.docker.com/r/correia97/netcoresdksonar)

@@ -1,7 +1,4 @@
 FROM mcr.microsoft.com/mssql/server:2019-latest
-LABEL AUTHOR="Luiz Carlos Faria <luizcarlosfaria@gmail.com>"
-# RUN cat /etc/*release
-# RUN cat /etc/passwd
 
 VOLUME /docker-entrypoint-initdb.d
 

@@ -1,4 +1,5 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine3.11 as build-env
+LABEL Autor="Paulo Eduardo Correia <https://github.com/correia97/docker-images>"
 
 # Atualiza as ferramentas linux e instala openjdk
 RUN apk add --update \
@@ -13,5 +14,3 @@ ENV PATH=$PATH:$JAVA_HOME/bin
 RUN dotnet tool install --global dotnet-sonarscanner  --version 4.10.0
 # Variavel de path das ferramentas
 ENV PATH="${PATH}:/root/.dotnet/tools"
-
-

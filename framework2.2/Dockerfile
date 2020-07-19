@@ -1,4 +1,5 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2 as build-env
+LABEL Autor="Paulo Eduardo Correia <https://github.com/correia97/docker-images>"
 
 #RUN cat /etc/*release
 
