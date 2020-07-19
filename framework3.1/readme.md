@@ -55,5 +55,3 @@ Execute o build com o comando
 ```bash
 docker build --build-arg sonarLogin=__SonarToken____  .
 ```
-
-[Repositório GIT](https://github.com/correia97/docker-images)
