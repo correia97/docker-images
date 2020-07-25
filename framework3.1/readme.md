@@ -5,7 +5,7 @@
 
 ```bash
 # Imagem com SDK para fazer o build da aplicação
-FROM correia97/netcoresdksonar:3.1-alpine3.11 as build
+FROM correia97/netcoresdksonar:3.1-alpine3.12 as build
 
 # Diretório onde os arquivos serão copiados e onde os comandos serão executados
 WORKDIR /app
