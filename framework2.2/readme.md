@@ -5,7 +5,7 @@
 
 ```bash
 # Imagem com SDK para fazer o build da aplicação
-FROM correia97/netcoresdksonar:3.1-alpine3.11 as build
+FROM correia97/netcoresdksonar:2.2 as build
 
 # Diretório onde os arquivos serão copiados e onde os comandos serão executados
 WORKDIR /app
@@ -35,7 +35,7 @@ RUN dotnet sonarscanner end /d:sonar.login=$sonarLogin
 RUN dotnet publish  src/MyProject.csproj -c Release -o out
 
 # Imgem com Runtime para executar o projeto
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-alpine3.11
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2.6-alpine3.9
 
 # Diretório onde os arquivos serão copiados e onde os comandos serão executados
 WORKDIR /app
