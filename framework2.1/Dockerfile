@@ -14,3 +14,5 @@ ENV PATH=$PATH:$JAVA_HOME/bin
 RUN dotnet tool install --global dotnet-sonarscanner  --version 4.10.0
 # Variavel de path das ferramentas
 ENV PATH="${PATH}:/root/.dotnet/tools"
+
+RUN java -version
